@@ -34,7 +34,7 @@ const playGame = (userChoice) => {
 
     if(userChoice === compChoice)
     {
-        drawGame();
+        drawGame(userChoice);
     }
     else
     {
@@ -57,8 +57,8 @@ const playGame = (userChoice) => {
 }
 
 
-const drawGame = () => {
-    msg.textContent = "Game was Draw";
+const drawGame = (userChoice) => {
+    msg.textContent = `It's a draw! You both chose ${userChoice}`;
     msg.style.backgroundColor = "orange"
 };
 
